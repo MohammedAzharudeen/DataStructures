@@ -1,5 +1,5 @@
 # DataStructures
 
-->Linked List
-  ->Insert at the beginning
-  ->Insert at the nth position
+-Linked List
+  -Insert at the beginning
+  -Insert at the nth position
