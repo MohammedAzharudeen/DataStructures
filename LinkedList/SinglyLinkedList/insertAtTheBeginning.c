@@ -17,11 +17,15 @@ void insertAtTheBeginning(int x)
 	struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
 	new_node -> data = x;
 	new_node -> next = NULL;
-	if(head==NULL) 
+	if(head==NULL)
+	{
 		head = new_node;
+	}
 	else
+	{
 		new_node -> next = head;
 		head = new_node;
+	}
 }
 
 void print(){
@@ -41,7 +45,8 @@ int main()
 	printf("How many numbers to be inserted?\n");
 	int n,i,x;
 	scanf("%d",&n);
-	for(i=0;i<n;i++){
+	for(i=0;i<n;i++)
+	{
 		printf("Enter the number :\n");
 		scanf("%d",&x);
 		insertAtTheBeginning(x);
